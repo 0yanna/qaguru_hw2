@@ -24,7 +24,6 @@ public class TextBoxTest {
     void automationPracticeForm () {
         open("https://demoqa.com/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
-
         $( "#firstName").setValue("Alex");
         $( "#lastName").setValue("Smith");
         $( "#userEmail").setValue("xx@mail.ru");
@@ -68,5 +67,7 @@ public class TextBoxTest {
         $(".table-responsive").shouldHave(text("Alex Smith"), text("xx@mail.ru"), text("Male"),
                 text("9110000000"), text("31 January,1990"), text("Math"), text("Sports"), text("pic.jpg"),
                 text("Some address"), text("Haryana Karnal"));
+        //коммент для второго коммита
+        //коммент для третьего коммита
     }
 }
